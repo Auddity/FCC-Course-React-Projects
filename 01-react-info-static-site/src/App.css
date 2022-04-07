@@ -1,0 +1,82 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  width: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(233, 12%, 15%);
+  color: #fefefe;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 23px;
+  color: hsl(193, 95%, 68%);
+}
+
+header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+header .logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  background: 
+    url('./assets/reactjs-icon\ 2.png')
+    center right
+    / 30%
+    no-repeat
+    hsl(217, 14%, 18%);
+  color: #fefefe;
+  padding: 30px;
+}
+
+main h1 {
+  font-size: 39px;
+  padding-block: 50px;
+  margin-block-start: -100px;
+}
+
+main ul {
+  padding-inline-start: 30px;
+  max-width: 450px;
+}
+
+main ul > li {
+  letter-spacing: 1.1px;
+  padding-block: 8px;
+}
+
+main ul > li::marker {
+  color: hsl(193, 95%, 68%);
+  font-size: 1.8rem;
+}
