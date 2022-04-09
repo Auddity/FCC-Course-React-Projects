@@ -1,3 +1,23 @@
+:root {
+  --bodyBg: hsla(227, 11%, 15%, 1);
+  --cardBg: hsla(231, 12%, 12%, 1);
+  --footerBg: hsla(231, 7%, 9%, 1);
+  
+  --nameText: hsla(0, 0%, 100%, 1);
+  --titleText: hsla(0, 0%, 96%, 1);
+  --paraText: hsla(0, 0%, 86%, 1);
+  --accentText: hsla(25, 79%, 78%, 1);
+  
+  --socialLinks: hsla(254, 6%, 58%, 1);
+  --btnAltBg: hsla(212, 72%, 60%, 1);
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,4 +26,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: hsla(227, 11%, 15%, 1);
+}
+
+a {
+  text-decoration: none;
 }
