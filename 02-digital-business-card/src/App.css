@@ -1,4 +1,90 @@
 .card {
-  width: 400px;
-  
+  width: 317px;
+}
+
+.header {
+  height: 317px;
+  width: 100%;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.main {
+  height: 400px;
+  background: var(--cardBg);
+  padding: 25px;
+  padding-block-start: 20px;
+}
+
+.personInfo {
+  text-align: center;
+  color: var(--nameText);
+}
+
+.personInfo .name {
+  font-size: 26px;
+} 
+
+.personInfo .position {
+  color: var(--accentText);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.personInfo a {
+  font-size: 11px;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 10px;
+  font-size: 14px;
+  padding-block: 8px;
+  border-radius: 8px;
+  margin-block: 10px;
+}
+
+.btn i {
+  font-size: 16px
+}
+
+.emailBtn {
+  color: var(--cardBg);
+  background-color: var(--nameText);
+}
+
+.linkedInBtn {
+  background: var(--btnAltBg);
+  color: var(--nameText);
+}
+
+.blurb {
+  padding-block-start: 20px;
+}
+
+.blurb .title {
+  color: var(--titleText);
+  font-size: 16px;
+  margin-block-end: 5px;
+}
+
+.blurb p {
+  font-size: 11px;
+  color: var(--paraText);
+  line-height: 15px;
 }
