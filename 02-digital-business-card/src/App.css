@@ -1,5 +1,7 @@
 .card {
   width: 317px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .header {
@@ -87,4 +89,18 @@
   font-size: 11px;
   color: var(--paraText);
   line-height: 15px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  background-color: var(--footerBg);
+  padding-block: 10px;
+  padding-inline: 40px;
+}
+
+.footer a i {
+  color: var(--socialLinks);
 }
