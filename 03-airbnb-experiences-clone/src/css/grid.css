@@ -1,0 +1,8 @@
+.gridContainer {
+  display: grid;
+}
+
+.gridContainer img {
+  width: auto;
+  height: auto;
+}
