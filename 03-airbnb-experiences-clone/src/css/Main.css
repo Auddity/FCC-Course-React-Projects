@@ -1,0 +1,13 @@
+.main {
+  padding-inline: 30px;
+  font-weight: 300;
+}
+
+.main h1 {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.main p {
+  padding-inline-end: 140px;
+}
