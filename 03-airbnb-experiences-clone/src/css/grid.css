@@ -2,7 +2,7 @@
   width: 400px;
   height: 232px;
   margin-inline: auto;
-  margin-block: 40px;
+  margin-block: 25px 40px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(24, 10px);

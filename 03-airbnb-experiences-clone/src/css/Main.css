@@ -6,8 +6,10 @@
 .main h1 {
   font-weight: 600;
   font-size: 36px;
+  margin-block-end: 16px;
 }
 
 .main p {
   padding-inline-end: 140px;
+  line-height: 1.3;
 }
