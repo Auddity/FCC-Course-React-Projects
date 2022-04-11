@@ -1,8 +1,47 @@
 .gridContainer {
+  width: 400px;
+  height: 232px;
+  margin-inline: auto;
+  margin-block: 40px;
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(24, 10px);
+  row-gap: 2px;
 }
 
-.gridContainer img {
-  width: auto;
-  height: auto;
+img[title="pic1"] {
+  grid-column-start: 1;
+  grid-row-start: 6;
+}
+img[title="pic2"] {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+img[title="pic3"] {
+  grid-column-start: 2;
+  grid-row-start: 8;
+}
+img[title="pic4"] {
+  grid-column-start: 3;
+  grid-row-start: 13;
+}
+img[title="pic5"] {
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+img[title="pic6"] {
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+img[title="pic7"] {
+  grid-column-start: 4;
+  grid-row-start: 10;
+}
+img[title="pic8"] {
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+img[title="pic9"] {
+  grid-column-start: 5;
+  grid-row-start: 12;
 }
