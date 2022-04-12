@@ -1,0 +1,27 @@
+.portrait {
+  width: 176px;
+}
+
+.cardInfo {
+  color: #222222;
+  font-weight: 100;
+}
+
+.ratingCntnr {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ratingCntnr img {
+  width: 12px;
+}
+
+.ratingCntnr .ratingText span {
+  color: #918E9B;
+  padding-left: 5px;
+}
+
+.bold {
+  font-weight: 600;
+}

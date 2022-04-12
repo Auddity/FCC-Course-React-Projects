@@ -1,6 +1,7 @@
 import './css/App.css';
 import Nav from './components/Nav';
 import Main from './components/Main';
+import Cards from "./components/Cards";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <Nav />
       </header>
       <Main />
+      <section className="cardContainer">
+        <Cards />
+      </section>
     </div>
   );
 }
