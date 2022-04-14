@@ -1,10 +1,10 @@
 import React from "react";
-import logo from '../images/logo.svg';
 
+// Resolve logo
 const Nav = () => {
   return (
     <nav className="nav">
-      <img src={logo} alt="airbnb logo" />
+      <img src="./images/logo.svg" alt="airbnb logo" />
     </nav>
   )
 }
