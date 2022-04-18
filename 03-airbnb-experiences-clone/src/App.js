@@ -1,9 +1,21 @@
 import './css/App.css';
+import data from './components/data';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Cards from "./components/Cards";
 
 function App() {
+  const cardEls = data.map(card => {
+    return <Cards 
+      portrait = {card.portrait}
+      alt = {card.alt}
+      rating = {card.rating}
+      numReviews = {card.numReviews}
+      loc = {card.loc}
+      desc = {card.desc}
+      cost = {card.cost}
+    />
+  });
   return (
     <div className="App">
       <header className="App-header">
@@ -11,33 +23,7 @@ function App() {
       </header>
       <Main />
       <section className="cardContainer">
-        <Cards 
-          portrait="./images/KatieZaferes.png"
-          alt=""
-          rating={5.0}
-          numReviews={6}
-          loc="USA"
-          desc="Lessons with Katie Zafares"
-          cost={136}
-        />
-        <Cards 
-          portrait="./images/wedding-photography 1.png"
-          alt=""
-          rating={5.0}
-          numReviews={30}
-          loc="USA"
-          desc="Learn wedding photography"
-          cost={125}
-        />
-        <Cards 
-          portrait="./images/mountain-bike 1.png"
-          alt=""
-          rating={4.8}
-          numReviews={2}
-          loc="USA"
-          desc="Group Mountain Biking"
-          cost={50}
-        />
+        {cardEls}
       </section>
     </div>
   );

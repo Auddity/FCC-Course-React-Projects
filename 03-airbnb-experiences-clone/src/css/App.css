@@ -17,4 +17,5 @@
   font-size: 12px;
   padding-inline: 30px;
   margin-block-start: 50px;
+  overflow-x: scroll;
 }

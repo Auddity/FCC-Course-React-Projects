@@ -4,7 +4,7 @@ import '../css/Cards.css';
 const Cards = ({portrait, alt, rating, numReviews, loc, desc, cost}) => {
   return (
     <div className="card">
-      <img src={portrait} alt={alt} className="portrait"/>
+      <img src={`./images/${portrait}`} alt={alt} className="portrait"/>
       <div className="cardInfo">
         <div className="ratingCntnr">
           <img src="./images/Star 1.png" alt="star" />
