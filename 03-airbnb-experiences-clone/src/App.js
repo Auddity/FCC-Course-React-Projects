@@ -7,13 +7,9 @@ import Cards from "./components/Cards";
 function App() {
   const cardEls = data.map(card => {
     return <Cards 
-      portrait = {card.portrait}
-      alt = {card.alt}
-      rating = {card.rating}
-      numReviews = {card.numReviews}
-      loc = {card.loc}
-      desc = {card.desc}
-      cost = {card.cost}
+      key={card.id}
+      // card={card}
+      {...card}
     />
   });
   return (

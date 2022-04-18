@@ -11,7 +11,7 @@ const Main = () => {
         { images.map(({ id, title, src, alt }) => <img key={id} src={src} title={title} alt={alt} />) }
       </div>
       <h1>Online Experiences</h1>
-      <p>Join unique interactive ativites led by one-of-a-kind hosts-all whith out leaving home.</p>
+      <p>Join unique interactive ativites led by one-of-a-kind hosts-all with out leaving home.</p>
     </main>
   )
 }
