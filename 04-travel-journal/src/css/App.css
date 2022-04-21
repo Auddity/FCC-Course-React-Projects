@@ -1,0 +1,31 @@
+.App {
+  height: 100vh;
+  /* overflow-y: hidden; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 89%, 66%);
+  color: white;
+  letter-spacing: -.5px;
+  padding: 1.4rem;
+}
+
+.header i {
+  padding-inline-end: .5rem;
+}
+
+.header span {
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 92%;
+}
