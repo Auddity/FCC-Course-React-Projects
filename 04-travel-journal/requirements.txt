@@ -1,0 +1,13 @@
+- Create an array of data to pull the information from in a seperate file.
+  - This should contain:
+    - Title
+    - Location
+    - Google Maps Link
+    - Start Date
+    - End Date
+    - Description
+    - Image URL
+
+- Use .map() method and props on costom components.
+
+- Styled & Polished.
