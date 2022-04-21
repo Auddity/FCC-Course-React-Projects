@@ -18,7 +18,14 @@ const Cards = props => {
         <img src={img} alt={title} />
       </div>
       <div className="info-ctnr">
-
+        <div className="loc-ctnr">
+          {/* icon */}
+          <p>{loc}</p>
+          <a target="_blank" rel="noreferrer" href={map}>view on Google Maps</a>
+        </div>
+        <h1 className="title">{title}</h1>
+        <p className="dates">{start}-{end}</p>
+        <p className="desc">{desc}</p>
       </div>
     </div>
   )
