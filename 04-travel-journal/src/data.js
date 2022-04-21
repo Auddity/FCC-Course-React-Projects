@@ -32,7 +32,7 @@ const data = [
       startDate: "July 20th, 2006",
       endDate: "July 21st, 2006",
     },
-    description: "The Lion Monument in Lucerne is a giant dying lion carved out of a wall of sandstone rock above a pond at the east end of the medieveal town. It was designed as a memorial for the mercenary soldiers from central Switzerland who lost their lives while serving the French king Louis XVI during the French Revolution",
+    description: "The Lion Monument in Lucerne is a giant dying lion carved out of a wall of sandstone rock above a pond at the east end of the medieveal town. It was designed as a memorial for the mercenary soldiers from central Switzerland who lost their lives while serving the French king Louis XVI during the French Revolution.",
     imageSource: "https://images.unsplash.com/photo-1641906367368-7fad1af91998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80",
   }
 ];
