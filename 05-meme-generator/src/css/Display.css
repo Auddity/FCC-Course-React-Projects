@@ -1,0 +1,7 @@
+.Display {
+  background-color: aqua;
+  height: 40rem;
+  width: max(400px, 80%);
+  margin-inline: auto;
+  margin-block-start: 5rem;
+}
