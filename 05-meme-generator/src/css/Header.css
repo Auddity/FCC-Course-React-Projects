@@ -1,0 +1,27 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: var(--linear-gradient);
+  padding: 2rem 2.5vmax;
+}
+
+.title-ctnr {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.title-ctnr img {
+  width: 3.1rem;
+  height: 2.6rem;
+}
+
+.title-ctnr .title {
+  font-size: 2rem;
+}
+
+.sec-title-ctnr .second-title {
+  font-size: 1.2rem;
+}
