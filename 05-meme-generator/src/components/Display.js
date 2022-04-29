@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Display.css';
+import memeData from '../data.js';
 
 const Display = () => {
-  return (
-    <section className="Display">
-      
-    </section>
-  )
-}
+  const getRandomNum = () => Math.floor(Math.random() * memes.length);
+  
+  const { memes } = memeData.data;
+  const index = getRandomNum();
+  const { url:imgUrl } = memes[index];
+  
+  const [memeImage, setMemeImage] = useState('');
+  
+  const getMemeImage = () => {
+    setMemeImage(imgUrl);
+  }
 
-export default Display
+  return (
+    <section 
+      className="Display"
+      onClick={getMemeImage}
+    >
+      <img src={memeImage} alt="meme" />
+    </section>
+  );
+};
+
+export default Display;

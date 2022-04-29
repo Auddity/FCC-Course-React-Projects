@@ -1,7 +1,11 @@
 .Display {
-  background-color: aqua;
   height: 40rem;
-  width: max(400px, 80%);
-  margin-inline: auto;
   margin-block-start: 5rem;
+}
+
+.Display img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
