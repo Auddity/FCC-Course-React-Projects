@@ -5,14 +5,22 @@ import image from '../images/Get a new meme image.png';
 import memeData from '../data.js';
 
 const Form = () => {
-  const [memeImage, setMemeImage] = useState('http://i.imgflip.com/1bij.jpg');
+  const [memeImage, setMemeImage] = useState({
+    topText: '',
+    bottomText: '',
+    randomImage: 'http://i.imgflip.com/1bij.jpg'
+  });
+
+  const allMemeImages = memeData.data.memes;
   
   const getMemeImage = (e) => {
     e.preventDefault();
-    const memesArr = memeData.data.memes;
-    const randomNum = Math.floor(Math.random() * memesArr.length);
-    const { url } = memesArr[randomNum];
-    setMemeImage(url);
+    const randomNum = Math.floor(Math.random() * allMemeImages.length);
+    const { url } = allMemeImages[randomNum];
+    setMemeImage(prevState => ({
+      ...prevState,
+      randomImage: url
+    }));
   }
 
   return (
@@ -37,7 +45,7 @@ const Form = () => {
       </form>
 
       <section className="Display" >
-        <img src={memeImage} alt="meme" />
+        <img src={memeImage.randomImage} alt="meme" />
       </section>
     </div>
   )
