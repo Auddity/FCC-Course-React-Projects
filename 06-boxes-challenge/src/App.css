@@ -1,0 +1,17 @@
+.App {
+  height: 100vh;
+  border: 1px red solid;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+.fill {
+  background-color: black;
+}
