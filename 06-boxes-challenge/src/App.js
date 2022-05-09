@@ -10,18 +10,17 @@ function App() {
     setSquares(prev => {
       return prev.map(square => {
         return square.id === id 
-          ? {...square, on: !square.on}
-          : square;
+        ? {...square, on: !square.on} 
+        : square;
       })
     })
   }
 
   const squareEl = squares.map(square => (
     <Box 
-      id={square.id}
       key={square.id} 
       on={square.on} 
-      toggle={toggle}/>
+      toggle={() => toggle(square.id)}/>
   ))
 
   return (

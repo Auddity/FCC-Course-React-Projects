@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Box = (props) => {
-  // const [state, setState] = useState(props.on);
 
   const styles = {
     backgroundColor: props.on ? "#222222" : "transparent"
@@ -9,10 +8,9 @@ const Box = (props) => {
 
   return (
     <div 
-      id={props.id}
       className='box'
       style={styles}
-      onClick={()=>props.toggle(props.id)}
+      onClick={props.toggle}
       >
     </div>
     
