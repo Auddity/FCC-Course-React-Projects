@@ -8,21 +8,11 @@ function App() {
 
   const toggle = id => {
     setSquares(prev => {
-      const newSquares = []
-      for(let square in prev) {
-        const currSquare = prev[square]
-        if(currSquare.id === id) {
-          const updatedSquare = {
-            ...currSquare,
-            on: !currSquare.on
-          }
-          newSquares.push(updatedSquare)
-        } else {
-          newSquares.push(currSquare)
-        }
-      }
-      console.log(newSquares);
-      return newSquares
+      return prev.map(square => {
+        return square.id === id 
+          ? {...square, on: !square.on}
+          : square;
+      })
     })
   }
 
