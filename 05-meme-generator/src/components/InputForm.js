@@ -24,6 +24,14 @@ const Form = () => {
     }));
   }
 
+  const handleMeme = e => {
+    const {name, value} = e.target
+    setMeme(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
+  }
+
   return (
     <div>
       <form action="" className="form" id="form">
@@ -31,11 +39,15 @@ const Form = () => {
           <input 
             className="input" 
             type="text" 
-            placeholder="Top Text"/>
+            placeholder="Top Text"
+            name="topText"
+            onChange={handleMeme}/>
           <input 
             className="input" 
             type="text" 
-            placeholder="Bottom Text"/>
+            placeholder="Bottom Text"
+            name="bottomText"
+            onChange={handleMeme}/>
         </div>
         <button 
           className="button" 
@@ -47,6 +59,8 @@ const Form = () => {
 
       <section className="Display" >
         <img src={meme.randomImage} alt="meme" />
+        <h1 className="text">{meme.topText}</h1>
+        <h2 className="text">{meme.bottomText}</h2>
       </section>
     </div>
   )

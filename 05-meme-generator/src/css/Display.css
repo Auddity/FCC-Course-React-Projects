@@ -1,6 +1,8 @@
 .Display {
-  height: 40rem;
+  height: auto;
   margin-block-start: 5rem;
+  position: relative;
+  text-align: center;
 }
 
 .Display img {
@@ -8,4 +10,32 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.Display .text {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 
+    3px 3px black, 
+    -3px 3px black,
+    -3px -3px black,
+    3px -3px black;
+}
+
+.Display h1 {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Display h2 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
