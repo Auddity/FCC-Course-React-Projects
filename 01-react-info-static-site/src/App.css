@@ -23,9 +23,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: hsl(233, 12%, 15%);
+  padding: 30px;
+  box-shadow: 0 2px 5px hsl(217, 14%, 18%);
+  z-index: 1;
+}
+
+header.dark {
   background-color: hsl(233, 12%, 15%);
   color: #fefefe;
-  padding: 30px;
 }
 
 header h1 {
@@ -33,15 +39,50 @@ header h1 {
   color: hsl(193, 95%, 68%);
 }
 
-header h2 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
 header .logoContainer {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+header .toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.dark .toggler--light {
+  color: #888;
+}
+header .toggler--dark {
+  color: #aaa;
+}
+header.dark .toggler--dark {
+  color: #fefefe;
+}
+
+header .toggler .toggler--slider {
+  width: 40px;
+  height: 20px;
+  background-color: hsl(233, 12%, 15%);
+  margin-inline: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+header.dark .toggler .toggler--slider {
+  background-color: #fefefe;
+}
+
+header .toggler .toggler--slider .toggler--slider--circle {
+  width: 20px;
+  height: 20px;
+  background-color: #fefefe;
+  border-radius: 50%;
+  transform: translateX(5%);
+}
+header.dark .toggler .toggler--slider .toggler--slider--circle {
+  background-color: hsl(233, 12%, 15%);
+  transform: translateX(95%);
 }
 
 /* Main */
@@ -54,10 +95,18 @@ main {
     url('./assets/reactjs-icon\ 2.png')
     center right
     / 30%
-    no-repeat
-    hsl(217, 14%, 18%);
-  color: #fefefe;
+    no-repeat;
+  color: hsl(233, 12%, 15%);
   padding: 30px;
+}
+
+main .logo {
+  color: #888;
+}
+
+main.dark {
+  color: #fefefe;
+  background-color: hsl(217, 14%, 18%);
 }
 
 main h1 {
