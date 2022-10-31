@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.split {
+  height: 500px;
+  border: 1px solid black;
+}
+
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
